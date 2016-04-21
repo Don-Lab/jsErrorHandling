@@ -1,2 +1,2 @@
 # jsErrorHandling
-The way to test your code
+Javascript Error Handling is how programmers can test their code and test the user's input
