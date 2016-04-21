@@ -18,10 +18,10 @@
 
 
 //"try" tests a block of code for errors
-//"catch" allows the programmer to handle the errors
-//"finally" executes the code after the try and catch commands, no matter the result
+//"catch" is what should happen if an error is detected
+//"finally" executes code after the try and catch commands, no matter the result
 
-//if there is an error in the "try" command, any other code after it will not be executed
+//if there is an error in the "try" command, any other code after it will not be executed (within the try block)
 
 /*try {
 	code to "try"
@@ -30,7 +30,7 @@
 catch(err){
 	error handling code
 }
-err is a parameter that you can name anything (you must call what you name it though)
+err is a parameter that you can name anything
 */
 
 //test adddlert
@@ -40,7 +40,7 @@ try {
 
 //catch(error) {print in id errorTest = error message};
 catch(err) {
-	document.getElementById("errorTest").innerHTML = err.message;
+	document.getElementById("errorTest").innerHTML = err.message; //this calls the parameter.message
 }
 
 
@@ -60,7 +60,7 @@ try {
 	alret("Bad Code");
 }
 
-//when you alert the user of an error, you simply put the catch parameter in the alert parentheses
+//when you alert the user of an error, you simply put the catch parameter in alert's parentheses
 catch(err) {
 	alert(err);
 }
