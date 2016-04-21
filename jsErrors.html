@@ -1,0 +1,75 @@
+<DOCUMENT! html>
+<head>
+	<title>JS Errors</title>
+</head>
+<body>
+
+<center><h1>Javascript Errors</h1></center>
+<br />
+<br />
+<p id="errorTest"></p>
+<br />
+<br />
+<p id="errorTest2"></p>
+
+
+<script>
+/*Javascript Error Handling is how programmers can test their code and test the user's input*/
+
+
+//"try" tests a block of code for errors
+//"catch" allows the programmer to handle the errors
+//"finally" executes the code after the try and catch commands, no matter the result
+
+//if there is an error in the "try" command, any other code after it will not be executed
+
+/*try {
+	code to "try"
+}
+
+catch(err){
+	error handling code
+}
+err is a parameter that you can name anything (you must call what you name it though)
+*/
+
+//test adddlert
+try {
+	adddlert("Hello World");
+}
+
+//catch(error) {print in id errorTest = error message};
+catch(err) {
+	document.getElementById("errorTest").innerHTML = err.message;
+}
+
+
+//documnet instead of document
+try {
+	documnet.getElementById("errorTest2").innerHTML = err.message;
+}
+//catch needs the perameter err
+catch(err) {
+	document.getElementById("errorTest2").innerHTML = err.message;
+}
+
+//"finally" code will run without concern for the outcome from the "try"
+//alret instead of alert
+try {
+	alert("Good Code");
+	alret("Bad Code");
+}
+
+//when you alert the user of an error, you simply put the catch parameter in the alert parentheses
+catch(err) {
+	alert(err);
+}
+
+finally {
+	alert("Final Alert");
+}
+
+</script>
+
+</body>
+</html>
