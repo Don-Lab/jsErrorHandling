@@ -53,6 +53,15 @@ catch(err) {
 	document.getElementById("errorTest2").innerHTML = err.message;
 }
 
+//throw allows you to create your own errors
+try {
+	var x = "Hello";
+	if (x != "Hi") throw new Error('Hello != Hi');
+}
+catch(e) {
+	alert(e.message);
+}
+
 //"finally" code will run without concern for the outcome from the "try"
 //alret instead of alert
 try {
